@@ -68,7 +68,10 @@ class Planet(Base):
     # Here we define columns for the table person
     # Notice that each column is also a normal Python instance attribute.
     id = Column(Integer, primary_key=True)
-    url = Column(String(500))
+    name = Column(String(500))
+    diameter = Column(Integer)
+    terrain = Column(String(500))
+    population = Column(Integer)
     
 class Character(Base):
     __tablename__ = 'character'

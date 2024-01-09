@@ -17,7 +17,6 @@ class User(Base):
     email = Column(String(50), nullable=False)
     password = Column(String(50), nullable=False)
     
-
 class Follower(Base):
     __tablename__ = 'follower'
     # Here we define columns for the table person
@@ -71,7 +70,6 @@ class Planet(Base):
     id = Column(Integer, primary_key=True)
     url = Column(String(500))
     
-
 class Character(Base):
     __tablename__ = 'character'
     # Here we define columns for the table person
@@ -79,7 +77,6 @@ class Character(Base):
     id = Column(Integer, primary_key=True)
     url = Column(String(500))
    
-
 class Follow_planet(Base):
     __tablename__ = 'follow_planet'
     # Here we define columns for the table person
